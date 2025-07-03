@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+/*==variable CSS==*/
+:root {
+  --header-height: 3.5rem;
+
+  /* Base hues */
+  --primary-hue: 210;
+  --accent-hue: 180;
+
+  /* Title Colors */
+  --title-color: hsl(var(--primary-hue), 100%, 95%);
+  --title-color-dark: hsl(var(--primary-hue), 100%, 70%);
+  --title-color-light: hsl(var(--primary-hue), 100%, 100%);
+
+  /* Text and Body */
+  --text-color: hsl(0, 0%, 85%);
+  --muted-text-color: hsl(0, 0%, 60%);
+  --body-bg: hsl(210, 14%, 3%);
+
+  /* Container / Card Background */
+  --container-bg: hsl(220, 15%, 15%);
+  --container-bg-hover: hsla(180, 62%, 38%, 0.712);
+  --container-border: hsl(220, 10%, 25%);
+
+  /* Accent / Highlight */
+  --accent-color: hsl(var(--accent-hue), 100%, 65%);
+  --accent-color-hover: hsl(var(--accent-hue), 100%, 75%);
+
+  /* Shadows */
+  --shadow-color: hsla(0, 0%, 0%, 0.4);
+
+  /* Border radius & spacing */
+  --border-radius: 14px;
+  --padding: 1.25rem;
+
+  /* Button */
+  --btn-bg: var(--accent-color);
+  --btn-bg-hover: var(--accent-color-hover);
+  --btn-text: hsl(0, 0%, 10%);
+
+  /* Font */
+  --body-font: 'Host Grotesk', sans-serif;
+
+  /* Font weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Enlarged Base Sizes */
+  --font-size-xs: 0.875rem;
+  /* 14px */
+  --font-size-sm: 1rem;
+  /* 16px */
+  --font-size-base: 1.125rem;
+  /* 18px */
+  --font-size-md: 1.25rem;
+  /* 20px */
+  --font-size-lg: 1.5rem;
+  /* 24px */
+  --font-size-xl: 2rem;
+  /* 32px */
+  --font-size-xxl: 3.5rem;
+  /* 56px */
+
+  /* Line heights */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.6;
+  --line-height-loose: 1.8;
+
+  /* Letter spacing */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.05em;
+
+  /* Heading scale */
+  --heading-h1: var(--font-size-xxl);
+  --heading-h2: var(--font-size-xl);
+  --heading-h3: var(--font-size-lg);
+  --heading-h4: var(--font-size-md);
+  --heading-h5: var(--font-size-base);
+  --heading-h6: var(--font-size-sm);
+
+  /* Adjusted Margins Bottom */
+  --mb-xxs: 0.5rem;
+  /* 8px */
+  --mb-xs: 0.75rem;
+  /* 12px */
+  --mb-sm: 1rem;
+  /* 16px */
+  --mb-md: 1.5rem;
+  /* 24px */
+  --mb-lg: 2rem;
+  /* 32px */
+  --mb-xl: 2.5rem;
+  /* 40px */
+  --mb-2xl: 3.5rem;
+  /* 56px */
+  --mb-3xl: 4.5rem;
+  /* 72px */
+
+  /* Z-index */
+  --z-fixed: 10;
+  --z-modal: 50;
+  --z-tooltip: 100;
+}
+
+
+/*BASE*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  color: var(--text-color);
+}*/
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--font-size-base);
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--text-color)
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--title-color);
+  font-weight: var(--font-weight-semibold);
+}
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--title-color);
+
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Reusable CSS code*/
+.main{
+  padding-bottom: var(--mb-3xl);
+}
+.section {
+  padding: 6rem 0 2rem;
+  margin-bottom: var(--mb-xl);
+}
+
+.section__title {
+  display: block;
+  font-size: var(--heading-h1);
+  color: var(--title-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--mb-3xl);
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/*Layout*/
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem
+}
+
+/*Buttons*/
+.button {
+  display: inline-block;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--border-radius);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--btn-bg-hover);
+}
+
+.button__icon {
+  margin-left: var(--mb-xs);
+}
+
+.button__flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: var(--mb-lg);
+    margin-right: var(--mb-lg);
+  }
+
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button__icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 var(--header-height) 0;
+  }
+
+  .section {
+    padding: 2rem 0 4rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: var(--mb-2xl);
+  }
+}
+
+@media screen and (max-width: 576px) {}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  :root {
+    --big-font-size: 2.25rem;
+  }
+
+  .container {
+    margin-left: var(--mb-md);
+    margin-right: var(--mb-md);
+  }
+}
+
+
+/*.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #d5d6e6aa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}*/
