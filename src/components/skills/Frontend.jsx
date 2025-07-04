@@ -34,7 +34,7 @@ function Frontend() {
                     <div className="skills__data">
                         <i class="fi fi-rr-shield-trust"></i>
                         <div>
-                            <h3>React</h3>
+                            <h3>React/</h3>
                             <span className="skills__level">Basic</span>
                         </div>
                     </div>
