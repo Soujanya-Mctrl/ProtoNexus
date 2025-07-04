@@ -2,6 +2,7 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     column-gap: 6rem;
+    padding: 1rem;
 }
 
 .about__img {
@@ -61,6 +62,6 @@
     font-size: var(--font-size-base);
     color: var(--text-color);
     line-height: 1.6;
-    margin-bottom: var(--mb-3xl);
+    margin-bottom: calc(var(--mb-3xl) + 1rem);
 }
 
