@@ -1,0 +1,51 @@
+.skills__container {
+    grid-template-columns: repeat(2, 450px);
+    column-gap: 3rem;
+    justify-content: center;
+}
+
+.skills__content {
+    background-color: var(--container-bg);
+    border: 1px solid var(--container-border);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.274);
+    transition: box-shadow 0.5s ease;
+    max-width: 450px;  /* adjust as needed (e.g., 480px, 450px) */
+}
+
+.skills__content:hover {
+    box-shadow: 0 0 20px hsla(180, 100%, 75%, 0.3);
+}
+
+.skills__title {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
+    color: var(--title-color);
+    text-align: center;
+    margin-bottom: var(--mb-xl);
+}
+
+.skills__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.5rem;
+    row-gap: 2.5rem;
+    margin-left: 1.75rem;
+}
+
+.skills__group {
+    align-items: flex-start;
+    width: 90%;
+}
+
+.skills__data {
+    display: flex;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.skills__data i {
+    font-size: 1rem;
+    margin-top: 6px;
+}

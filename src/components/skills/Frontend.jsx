@@ -8,49 +8,67 @@ function Frontend() {
             <div className="skills__box">
                 <div className="skills__group">
                     <div className="skills__data">
-                        <i className="ri-check-line"></i>
+                        <i className="fi fi-rr-badge-check"></i>
                         <div>
-                            <h3>HTML</h3>
+                            <h3 className="skill__name">HTML</h3>
                             <span className="skills__level">Basic</span>
                         </div>
                     </div>
+                </div>
 
+                <div className="skills__group">
                     <div className="skills__data">
-                        <i class="fi fi-rr-shield-trust"></i>
+                        <i className="fi fi-rr-badge-check"></i>
                         <div>
-                            <h3>CSS</h3>
+                            <h3 className="skill__name">CSS</h3>
                             <span className="skills__level">Basic</span>
                         </div>
                     </div>
+                </div>
 
+                <div className="skills__group">
                     <div className="skills__data">
-                        <i class="fi fi-rr-shield-trust"></i>
+                        <i className="fi fi-rr-badge-check"></i>
                         <div>
-                            <h3>JavaScript</h3>
+                            <h3 className="skill__name">JavaScript</h3>
                             <span className="skills__level">Basic</span>
                         </div>
                     </div>
+                </div>
 
+                <div className="skills__group">
                     <div className="skills__data">
-                        <i class="fi fi-rr-shield-trust"></i>
+                        <i className="fi fi-rr-badge-check"></i>
                         <div>
-                            <h3>React/</h3>
+                            <h3 className="skill__name">ReactJs</h3>
                             <span className="skills__level">Basic</span>
                         </div>
                     </div>
+                </div>
 
+                <div className="skills__group">
                     <div className="skills__data">
-                        <i class="fi fi-rr-shield-trust"></i>
+                        <i className="fi fi-rr-badge-check"></i>
                         <div>
-                            <h3>Tailwind CSS</h3>
+                            <h3 className="skill__name">NextJS</h3>
                             <span className="skills__level">Basic</span>
                         </div>
                     </div>
-                    
+                </div>
+                
+                <div className="skills__group">
+                    <div className="skills__data">
+                        <i className="fi fi-rr-badge-check"></i>
+                        <div>
+                            <h3 className="skill__name">Tailwind CSS</h3>
+                            <span className="skills__level">Basic</span>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
+
     )
 }
 
