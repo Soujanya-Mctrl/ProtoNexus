@@ -1,0 +1,36 @@
+.qualification__container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.qualification__tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--mb-md);
+}
+
+h3 {
+    font-size: var(---heading-h3);
+}
+
+.qualification__button {
+    font-size: var(---heading-h3);
+    font-weight: var(--font-weight-medium);
+    color: var(--title-color);
+    margin: 0 var(--mb-lg);
+    cursor: pointer;
+}
+
+.qualification__button:hover {
+    color: var(--accent-color-hover);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    border-bottom: .3px transparent var(--accent-color);
+}
+
+.qualification__button.active {
+    color: var(--accent-color);
+    font-weight: var(--font-weight-bold);
+    border-bottom: 2px solid var(--accent-color);
+}
