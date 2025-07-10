@@ -1,6 +1,8 @@
 import "./skills.css";
 import Frontend from "./Frontend";
 import Backend from "./Backend";
+import Designing from "./Designing";
+import VideoEditing from "./VideoEditing";
 
 function Skills() {
     return (
@@ -11,6 +13,8 @@ function Skills() {
             <div className="skills__container container grid">
                 <Frontend />
                 <Backend />
+                <Designing />
+                <VideoEditing />
             </div>
         </section>
     )
