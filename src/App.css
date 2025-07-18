@@ -177,11 +177,11 @@ img {
 
 /*Reusable CSS code*/
 .main{
-  padding-bottom: var(--mb-3xl);
+  padding-bottom: var(--mb-xl);
 }
 .section {
-  padding: 6rem 0 2rem;
-  margin-bottom: var(--mb-xl);
+  padding: 8.5rem 0 2rem;
+  margin-bottom: var(--mb-lg);
 }
 
 .section__title {
